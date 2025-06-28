@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | To-Do | Shop</title>
+  <link rel="stylesheet" href="style3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">personal portfolio</div>
+    <div class="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#todo">To-Do</a>
+      <a href="#shop">Shop</a>
+    </div>
+  </nav>
+
+  <section id="portfolio">
+  <h2>👩‍💻 Personal Portfolio</h2>
+  <div class="portfolio-wrapper">
+    <div class="portfolio-card">
+      <img src="https://via.placeholder.com/150?text=Profile" alt="Profile Image" class="profile-pic" />
+      <h3>GAJULA SAI SAHIT</h3>
+      <p>Frontend Developer passionate about crafting beautiful and functional websites.</p>
+      <p>Email: <a href="mailto:akshithaneeli01@gmail.com">sahitsai09@gmail.com</a></p>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+      </div>
+      <div class="social-links">
+        <a href="#" target="_blank">🌐 Portfolio</a>
+        <a href="#" target="_blank">💼 LinkedIn</a>
+        <a href="#" target="_blank">📁 GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="todo">
+    <h2>✅ To-Do List</h2>
+    <div class="todo-container">
+      <input type="text" id="todo-input" placeholder="Add a task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="todo-list"></ul>
+    </div>
+  </section>
+
+  <section id="shop">
+  <h2>🛍️ Stylish Shop</h2>
+  <div class="shop-grid">
+    <div class="product">
+      <img src="https://via.placeholder.com/150?text=Shoes" alt="Shoes" />
+      <h4>Shoes</h4>
+      <p>₹999</p>
+      <input type="number" min="1" value="1" id="qty-shoes" />
+      <button onclick="addToCart('Shoes', 999, 'qty-shoes')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/150?text=Bag" alt="Bag" />
+      <h4>Bag</h4>
+      <p>₹599</p>
+      <input type="number" min="1" value="1" id="qty-bag" />
+      <button onclick="addToCart('Bag', 599, 'qty-bag')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/150?text=Watch" alt="Watch" />
+      <h4>Watch</h4>
+      <p>₹1299</p>
+      <input type="number" min="1" value="1" id="qty-watch" />
+      <button onclick="addToCart('Watch', 1299, 'qty-watch')">Add to Cart</button>
+    </div>
+  </div>
+
+  <h3>🧺 Cart Items</h3>
+  <ul id="cart-list"></ul>
+  <div id="cart-total">Total: ₹0</div>
+</section>
+
+  <script src="script3.js"></script>
+</body>
+</html>
